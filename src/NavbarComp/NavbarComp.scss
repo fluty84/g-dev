@@ -1,13 +1,28 @@
 
+$bcColor:#f8f9fa;
+
 .flag{
     margin-top: 15px;
     width: 25px;
 }
 
+.navbar{
+    padding-bottom: 0.8rem!important;
+}
+
+.navbar-collapse {
+    background-color: $bcColor;
+}
+
 .navigation {
-    height: 30px;
+    height: 30px;  
     
     img:hover{
         cursor: pointer; 
     }
 }
+
+.darkModeToggle {
+    margin-left: 2px;
+}
+

@@ -5,6 +5,7 @@ const myContext = createContext()
 function ProviderWrapper(props) {
 
     const [lang, setLang] = useState("sp")
+    const [colorScheme, setColorScheme] = useState()
 
     return (
         <myContext.Provider value={{lang, setLang}}>
