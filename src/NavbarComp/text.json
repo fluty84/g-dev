@@ -1,11 +1,11 @@
 {
     "sp": {
-        "proyects": "Proyectos",
+        "projects": "Proyectos",
         "resume": "Curriculum",
         "contact": "Contacta"
     },
     "eng": {
-        "proyects": "Proyects",
+        "projects": "Projects",
         "resume": "Resume",
         "contact": "Contact"
     }

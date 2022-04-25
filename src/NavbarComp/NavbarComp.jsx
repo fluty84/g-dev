@@ -49,7 +49,7 @@ const NavbarComp = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#features">{langT.proyects}</Nav.Link>
+                            <Nav.Link href="#features">{langT.projects}</Nav.Link>
                             <Nav.Link href="#pricing">{langT.resume}</Nav.Link>
 
                         </Nav>
