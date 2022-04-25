@@ -1,0 +1,12 @@
+{
+    "sp": {
+        "proyects": "Proyectos",
+        "resume": "Curriculum",
+        "contact": "Contacta"
+    },
+    "eng": {
+        "proyects": "Proyects",
+        "resume": "Resume",
+        "contact": "Contact"
+    }
+}
