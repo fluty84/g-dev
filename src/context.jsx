@@ -8,7 +8,7 @@ function ProviderWrapper(props) {
     const [colorScheme, setColorScheme] = useState()
 
     return (
-        <myContext.Provider value={{lang, setLang}}>
+        <myContext.Provider value={{lang, setLang, setColorScheme, colorScheme}}>
             {props.children}
         </myContext.Provider>
     )

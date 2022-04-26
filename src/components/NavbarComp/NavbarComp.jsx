@@ -7,7 +7,7 @@ import text from './text.json'
 import { DarkModeToggle } from "react-dark-mode-toggle-2";
 
 
-import { myContext } from "../context";
+import { myContext } from "../../context";
 
 import './NavbarComp.scss'
 
@@ -16,7 +16,7 @@ const NavbarComp = () => {
 
     const { sp, eng } = text
     
-    const { setLang, lang } = useContext(myContext)
+    const { setLang, lang, setColorScheme, colorScheme } = useContext(myContext)
    
     const [isDarkMode, setIsDarkMode] = useState(false);
     const [flag, setFlag] = useState(ukFlag)
@@ -26,8 +26,8 @@ const NavbarComp = () => {
        
         if (navigator.language.slice(0, 2) != "es") { changeLng() }
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            console.log('dark')
             setIsDarkMode(true)
+            setColorScheme("dark")
         }
     }, [])
 
@@ -38,12 +38,13 @@ const NavbarComp = () => {
     }
 
     const changeColorScheme = () =>{
-       
+       setIsDarkMode(!isDarkMode)
+       isDarkMode ? setColorScheme("light"): setColorScheme("dark")
     }
 
     return (
         <>
-            <Navbar className="navbar" collapseOnSelect fixed="top" expand="lg" bg="light" variant="light">
+            <Navbar className="navbar" collapseOnSelect fixed="top" expand="lg" bg={colorScheme} variant={colorScheme}>
                 <Container className="navigation">
                     <Navbar.Brand href="#home">G-DEV</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -67,7 +68,7 @@ const NavbarComp = () => {
                         </Figure>
                         <DarkModeToggle
                             className="darkModeToggle"
-                            onChange={setIsDarkMode}
+                            onChange={changeColorScheme}
                             isDarkMode={isDarkMode}
                             size={65}
                         />

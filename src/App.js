@@ -1,26 +1,30 @@
+import {useContext, useEffect} from 'react'
 import logo from './logo.svg';
-import NavbarComp from './NavbarComp/NavbarComp';
+import NavbarComp from './components/NavbarComp/NavbarComp';
+import Hero from './components/HeroComp/Hero';
+
+import { myContext } from "./context"
 
 import './App.scss';
 
+
+
 function App() {
+
+  const { colorScheme } = useContext(myContext)
+  
+
+  useEffect(()=>{
+    console.log('color', colorScheme)
+  }, [colorScheme])
+
   return (
     <div className="App">
       <NavbarComp></NavbarComp>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main className={`App-main ${colorScheme}`}>
+        <Hero></Hero>
+        
+      </main>
     </div>
   );
 }
