@@ -8,13 +8,15 @@ const Hero = () => {
 
     return(
         <div className="hero">
+           
             <div className='video-wrapper'>
                 <video playsInline autoPlay muted loop poster={frame}>
                     <source src={video} type="video/mp4"/>
                         Your browser does not support the video tag.
                 </video>
+                <h1>G-DEV</h1>
             </div>
-            <h1>HERO</h1>
+            
         </div>
     )
 } 

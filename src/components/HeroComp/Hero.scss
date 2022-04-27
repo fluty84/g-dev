@@ -1,30 +1,29 @@
 
+.hero {
+
+    h1{
+        position: relative;
+        color: white;
+        text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+    }
+}
 
 .video-wrapper {
-    /* Telling our absolute positioned video to 
-  be relative to this element */
     position: relative;
 
     width: auto;
     height: 400px;
-
-    /* Will not allow the video to overflow the 
-  container */
     overflow: hidden;
 
-    /* Centering the container's content vertically 
-  and horizontally */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    background-color: green;
    
 }
 
 video {
-    object-fit:cover!important;
+    object-fit:cover;
     height: 100%;
     width: 100%;
     
