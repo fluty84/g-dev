@@ -1,4 +1,4 @@
-import { Container, Figure, Nav, Navbar, NavDropdown, OverlayTrigger } from "react-bootstrap"
+import { Container, Figure, Nav, Navbar, NavDropdown, Fade } from "react-bootstrap"
 import React, { useState, useContext, useEffect } from 'react';
 
 import spainFlag from './spainflag.png'
@@ -15,15 +15,15 @@ import './NavbarComp.scss'
 const NavbarComp = () => {
 
     const { sp, eng } = text
-    
+
     const { setLang, lang, setColorScheme, colorScheme } = useContext(myContext)
-   
+
     const [isDarkMode, setIsDarkMode] = useState(false);
     const [flag, setFlag] = useState(ukFlag)
     const [langT, setLangT] = useState(sp)
 
     useEffect(() => {
-       
+
         if (navigator.language.slice(0, 2) != "es") { changeLng() }
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             setIsDarkMode(true)
@@ -37,13 +37,14 @@ const NavbarComp = () => {
         lang === "sp" ? setLangT(eng) : setLangT(sp)
     }
 
-    const changeColorScheme = () =>{
-       setIsDarkMode(!isDarkMode)
-       isDarkMode ? setColorScheme("light"): setColorScheme("dark")
+    const changeColorScheme = () => {
+        setIsDarkMode(!isDarkMode)
+        isDarkMode ? setColorScheme("light") : setColorScheme("dark")
     }
 
     return (
         <>
+
             <Navbar className="navbar" collapseOnSelect fixed="top" expand="lg" bg={colorScheme} variant={colorScheme}>
                 <Container className="navigation">
                     <Navbar.Brand href="#home">G-DEV</Navbar.Brand>
@@ -52,7 +53,6 @@ const NavbarComp = () => {
                         <Nav className="me-auto">
                             <Nav.Link href="#features">{langT.projects}</Nav.Link>
                             <Nav.Link href="#pricing">{langT.resume}</Nav.Link>
-
                         </Nav>
                         <Nav>
                             <NavDropdown title={langT.contact} id="collasible-nav-dropdown">
@@ -64,7 +64,7 @@ const NavbarComp = () => {
                             </NavDropdown>
                         </Nav>
                         <Figure onClick={changeLng} >
-                                <img className="flag" src={flag} alt='flag'></img>
+                            <img className="flag" src={flag} alt='flag'></img>
                         </Figure>
                         <DarkModeToggle
                             className="darkModeToggle"
@@ -75,6 +75,7 @@ const NavbarComp = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
         </>
     )
 }
