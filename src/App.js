@@ -1,7 +1,8 @@
 import {useContext, useEffect} from 'react'
-import logo from './logo.svg';
+
 import NavbarComp from './components/NavbarComp/NavbarComp';
 import Hero from './components/HeroComp/Hero';
+import Projects from './components/ProjetsComp/Projects';
 
 import { myContext } from "./context"
 
@@ -23,6 +24,7 @@ function App() {
       <NavbarComp></NavbarComp>
       <main className={`App-main ${colorScheme}`}>
         <Hero></Hero>
+        <Projects></Projects>
         
       </main>
     </div>
