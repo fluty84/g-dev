@@ -50,9 +50,9 @@ const NavbarComp = () => {
                     <Navbar.Brand href="#home">G-DEV</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#features">{langT.projects}</Nav.Link>
-                            <Nav.Link href="#pricing">{langT.resume}</Nav.Link>
+                        <Nav className="me-auto" bg={colorScheme} variant={colorScheme}>
+                            <Nav.Link href="#projets">{langT.projects}</Nav.Link>
+                            <Nav.Link href="#resume">{langT.resume}</Nav.Link>
                         </Nav>
                         <Nav>
                             <NavDropdown title={langT.contact} id="collasible-nav-dropdown">
