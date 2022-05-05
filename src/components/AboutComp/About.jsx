@@ -31,7 +31,7 @@ const About = () => {
 
     return (
         <Row>
-            <Col md={4} ref={ref}>
+            <Col md={4} ref={ref} onClick={()=> setVisible(visible === 'visible'? 'hide':'visible')}>
                 <Image className={`vector ${visible} back`} fluid={true} src={colorScheme === 'dark' ? siluetW : siluet} alt="eduImg" />
                 <Image className={`vector ${visible} middle`} fluid={true} src={colorScheme === 'dark'? vectorW : vector} alt="eduImg" />
                 <Image className={`vector ${visible} front`} fluid={true} src={edu} alt="eduImg" />
