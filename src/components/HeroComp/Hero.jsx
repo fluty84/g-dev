@@ -5,43 +5,27 @@ import './Hero.scss'
 import frame from './freeze.png'
 import video from './sourcecode.mp4'
 
+
 const Hero = () => {
+    
+    const SKILLS = ["Adaptable", "Smart", "Social", "Creative", "Curious", "Adaptable | Smart | Social | Creative | Corious"]
 
-    const [skill, setSkill] = useState("The developer you need")
-    let [counter, setCounter] = useState(0)
+    const [skills] = useState(SKILLS)
+    const [counter, setCounter] = useState(0)
 
-    const skills = ["Adaptable", "Smart", "Social", "Creative", "Curious"]
-
-    //let skill = "  "
-
-    const skillChanger = (arr) => {
-
-
+    const startTimer = (arr) => {
         const interval = setInterval(() => {
-
-            setSkill(arr[counter])
-
-            if (counter > arr.length -1) {
-                setCounter(0)
-               return setSkill("Adaptable | Smart | Social | Creative | Curious")
-            }
-            else {
-
-                setCounter(counter++)
-            }
-
+            setCounter(prev => (prev + 1) % arr.length)
         }, 1500)
         return () => clearInterval(interval)
     }
 
     useEffect(() => {
-        skillChanger(skills)
-       
-    },[])
+        startTimer(skills)
+    }, [])
 
     return (
         <div className="hero">
-
             <div className='video-wrapper'>
                 <video playsInline autoPlay muted loop poster={frame}>
                     <source src={video} type="video/mp4" />
@@ -49,10 +33,9 @@ const Hero = () => {
                 </video>
                 <Container >
                     <h1>G-DEV</h1>
-                    <h3>{skill}</h3>
+                    <h3>{skills[counter]}</h3>
                 </Container>
             </div>
-
         </div>
     )
 }
