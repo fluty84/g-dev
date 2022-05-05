@@ -8,6 +8,7 @@ import vector from './eduVector.svg'
 import vectorW from './eduVectorW.png'
 import edu from './edu.png'
 import siluetW from './eduSilW.png'
+import siluet from './eduSil.png'
 
 import { myContext } from "../../context"
 
@@ -31,9 +32,9 @@ const About = () => {
     return (
         <Row>
             <Col md={4} ref={ref}>
-                <Image className={`vector ${visible} back`} fluid={true} src={siluetW} alt="eduWB" />
-                <Image className={`vector ${visible} middle`} fluid={true} src={colorScheme === 'dark'? vectorW : vector} alt="eduWB" />
-                <Image className={`vector ${visible} front`} fluid={true} src={edu} alt="eduWB" />
+                <Image className={`vector ${visible} back`} fluid={true} src={colorScheme === 'dark' ? siluetW : siluet} alt="eduImg" />
+                <Image className={`vector ${visible} middle`} fluid={true} src={colorScheme === 'dark'? vectorW : vector} alt="eduImg" />
+                <Image className={`vector ${visible} front`} fluid={true} src={edu} alt="eduImg" />
 
             </Col>
             <Col md={6} className='article'>
