@@ -3,6 +3,7 @@ import { Row, Col, Image } from 'react-bootstrap'
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+import text from './text.json'
 
 import vector from './eduVector.svg'
 import vectorW from './eduVectorW.png'
@@ -20,26 +21,37 @@ const About = () => {
     const [visible, setVisible] = useState(null)
     const [ref, inView] = useInView()
 
+    const { sp, eng } = text
+
     useEffect(() => {
-        if(inView){
-            setVisible("visible")
-        } else{
-            setVisible("hide")
+        if (inView) {
+            setVisible('visible')
+        } else {
+            setVisible('hide')
         }
-    },[inView])
+    }, [inView])
 
 
     return (
         <Row>
-            <Col md={4} ref={ref} onClick={()=> setVisible(visible === 'visible'? 'hide':'visible')}>
+            <Col md={4} ref={ref} onClick={() => setVisible(visible === 'visible' ? 'hide' : 'visible')}>
                 <Image className={`vector ${visible} back`} fluid={true} src={colorScheme === 'dark' ? siluetW : siluet} alt="eduImg" />
-                <Image className={`vector ${visible} middle`} fluid={true} src={colorScheme === 'dark'? vectorW : vector} alt="eduImg" />
+                <Image className={`vector ${visible} middle`} fluid={true} src={colorScheme === 'dark' ? vectorW : vector} alt="eduImg" />
                 <Image className={`vector ${visible} front`} fluid={true} src={edu} alt="eduImg" />
 
             </Col>
             <Col md={6} className='article'>
-                <h2>Blablabla</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quibusdam, illum provident hic aperiam facere minus, delectus recusandae dolorem repellat, sapiente asperiores suscipit impedit? Delectus mollitia in distinctio officia nam!</p>
+                {lang === 'sp' ?
+                    <>
+                        <h2>{sp.title}</h2>
+                        <p>{sp.article}</p>
+                    </>
+                    :
+                    <>
+                        <h2>{eng.title}</h2>
+                        <p>{eng.article}</p>
+                    </>
+                }
             </Col>
         </Row>
     )

@@ -1,0 +1,31 @@
+{
+    "eng": [
+        {
+            "title": "Alien Hackers",
+            "article": "Helping the web development team to give a creative and original approach oriented to the end customer, contributing with my sales experience, and my daily effort to grow like a developer.",
+            "image": "./alienhackers.png"
+        },
+        {
+            "title": "Punto Violeta",
+            "article": "Punto Violeta: A complete website, whose mission is to make gender violence visible. It has role management, access to Google Maps and Places APIs, and is rendered from the backend, programmed with Express, Node and MongoDB.",
+            "image": "./puntovioleta.png"
+        },
+        {
+            "title": "Waiter-Hack",
+            "article": "Restaurant Web app that allows the bar customer to view the menu and place orders in real time, being these reflected instantly in the restaurant view, from where you can accept them & calculate the bill. It’s the latest and most complete app, taking advantage of all the potential of the MERN’s stack, socket, NPM libraries",
+            "image": "./waiterhack.png",
+            "video": "https://www.youtube.com/watch?v=OOtCATlunhU"
+        },
+        {
+            "title": "Happy Plant App",
+            "article": "My first React-Native + firebase Android APP, make whith EXPO. Create an account, save your plants and make reminders to water it.",
+            "image": "./happyplant.png"
+        }
+    ],
+    "sp": [
+        {
+            "title": "¿Qué ofrezco?",
+            "article": "Ayudar al equipo de desarrollo web a dar un enfoque creativo y orientado al cliente final, gracias a mi experiencia en ventas y mi esfuerzo por ser cada dia un desarrollador mejor "
+        }
+    ]
+}
