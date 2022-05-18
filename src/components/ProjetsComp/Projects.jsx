@@ -2,9 +2,12 @@
 import { Container, Carousel, Row, Col, Image } from 'react-bootstrap'
 import { useContext, useEffect, useState } from 'react'
 
+import { motion, useAnimation } from "framer-motion";
+
+import { useInView } from "react-intersection-observer";
+
 import { myContext } from "../../context"
 
-import alienhackers from "./alienhackers.png"
 import text from './text.json'
 
 
@@ -16,9 +19,10 @@ const Projects = () => {
 
     const variant = colorScheme === 'dark' ? 'light' : 'dark'
 
-    text.eng.map((item) => {
-        console.log(item.title)
-    })
+    const sp = 'sp'
+
+    console.log(text[lang])
+
 
     return (
         <>
@@ -26,48 +30,48 @@ const Projects = () => {
                 <h1>PROJECTS</h1>
             </Container>
 
-            {text && <Row className='justify-content-evenly'>
-                {
+            {text &&
+                <Row className='justify-content-evenly'>
+                    {
+                        text[lang].map((item, idx) => {
 
-                    text.eng.map((item, idx) => {
+                            const position = idx % 2 == 0 ? 'first' : 'last'
 
-                        const position = idx % 2 == 0 ? 'first' : 'last'
+                            return (
+                                <Container className='article' key={idx}>
 
-                        return (
-                            <Container className='article'>
+                                    <Row className='p-10'>
+                                        <Col md={{ size: 6, order: position }} xs={{ order: 'last' }}>
+                                            <h4>{item.title}</h4>
+                                            <p>{item.article}</p>
+                                        </Col>
 
-                                <Row className='p-10'>
-                                    <Col md={{ size: 6, order: position }} xs={{ order: 'last' }}>
-                                        <h4>{item.title}</h4>
-                                        <p>{item.article}</p>
-                                    </Col>
+                                        {
+                                            item.video ?
+                                                <Col md={6} xl={6} >
+                                                    <iframe
+                                                        width="90%"
+                                                        height="350px"
+                                                        object-fit="cover"
+                                                        src="https://www.youtube.com/embed/OOtCATlunhU"
+                                                        title="WaiterHack Camarero Virtual"
+                                                        frameBorder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen>
+                                                    </iframe>
+                                                </Col>
+                                                :
+                                                <Col md={6} xl={6} >
+                                                    <Image src={require(`${item.image}`)} alt={`image ${item.title}`} />
+                                                </Col>
+                                        }
+                                    </Row>
 
-                                    {
-                                        item.video ?
-                                            <Col md={6} xl={6} >
-                                                <iframe 
-                                                    width="90%"
-                                                    height="350px"
-                                                    object-fit="cover"
-                                                    src="https://www.youtube.com/embed/OOtCATlunhU"
-                                                    title="WaiterHack Camarero Virtual" 
-                                                    frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                    allowfullscreen>
-                                                </iframe>
-                                            </Col>
-                                            :
-                                            <Col md={6} xl={6} >
-                                                <Image src={require(`${item.image}`)} alt={`image ${item.title}`} />
-                                            </Col>
-                                    }
-                                </Row>
-
-                            </Container>
-                        )
-                    })
-                }
-            </Row>}
+                                </Container>
+                            )
+                        })
+                    }
+                </Row>}
 
             {/* <Carousel variant={variant} >
                 <Carousel.Item>
