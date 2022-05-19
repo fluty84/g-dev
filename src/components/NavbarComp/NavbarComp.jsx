@@ -45,7 +45,7 @@ const NavbarComp = () => {
     return (
         <>
 
-            <Navbar className="navbar" collapseOnSelect fixed="top" expand="lg" bg={colorScheme} variant={colorScheme}>
+            <Navbar className="navbar fixed-top" collapseOnSelect expand="lg" bg={colorScheme} variant={colorScheme}>
                 <Container id="navigation">
                     <Navbar.Brand href="#projects"><h3>G-DEV</h3></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
