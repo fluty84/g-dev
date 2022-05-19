@@ -1,19 +1,26 @@
-
 $medDisp: 991px;
 
 .flag {
     margin-top: 15px;
     width: 50px;
 
-    @media (max-width: $medDisp){
-         margin-top: -96px;
+    @media (max-width: $medDisp) {
+        margin-top: -96px;
     }
 }
 
+.navbar-expand-lg .navbar-collapse {
+
+    @media (min-width: 992px) {
+        display: flex !important;
+        flex-basis: auto;
+        height: 3px;
+    }
+}
 
 .navbar {
     padding-bottom: 0.8rem !important;
-    
+
     @media (max-width: $medDisp) {
         padding-bottom: 1.2rem !important;
     }
@@ -23,7 +30,7 @@ $medDisp: 991px;
 @media (max-width: $medDisp) {
 
     .navbar-collapse {
-        background-color:rgb(33 37 41);
+        background-color: rgb(33 37 41);
         border-radius: 10px;
     }
 }

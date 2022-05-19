@@ -49,13 +49,13 @@ const NavbarComp = () => {
                 <Container id="navigation">
                     <Navbar.Brand href="#projects"><h3>G-DEV</h3></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav" className="collapse navbar-collapse">
+                    <Navbar.Collapse id="responsive-navbar-nav" className={`collapse navbar-collapse bg-${colorScheme}`}>
                         <Nav className={`me-auto bg-${colorScheme}`} bg={colorScheme} variant={colorScheme}>
                             <Nav.Link href="#project"><h5>{langT.projects}</h5></Nav.Link>
                             <Nav.Link href={require("../../assets/cvEduardo5.pdf")} target='_blank'><h5>{langT.resume}</h5></Nav.Link>
                         </Nav>
-                        <Nav>
-                            <NavDropdown title={langT.contact} id="collasible-nav-dropdown">
+                        <Nav >
+                            <NavDropdown title={langT.contact} id="collasible-nav-dropdown" >
                                 <NavDropdown.Item href="https://github.com/fluty84" target="_blank">GitHub</NavDropdown.Item>
                                 <NavDropdown.Item href="https://www.linkedin.com/in/gordillo/" target="_blank">Linkedn</NavDropdown.Item>
                                 <NavDropdown.Item href="https://www.instagram.com/fluty84/" target="_blank">Instagram</NavDropdown.Item>
