@@ -17,17 +17,35 @@ const Projects = () => {
 
     const { lang, colorScheme } = useContext(myContext)
 
-    const variant = colorScheme === 'dark' ? 'light' : 'dark'
+    const [visible, setVisible] = useState('hide')
+    const [visible1, setVisible1] = useState('hide')
+    const [visible2, setVisible2] = useState('hide')
+    const [visible3, setVisible3] = useState('hide')
 
-    const sp = 'sp'
+    
+    const [ref, inView] = useInView()
+    const [ref1, inView1] = useInView()
+    const [ref2, inView2] = useInView()
+    const [ref3, inView3] = useInView()
 
-    console.log(text[lang])
+
+    const refArray = [ref, ref1, ref2, ref3]
+    const visibleArray = [visible, visible1, visible2, visible3]
+
+    useEffect(() => {
+       
+        inView ? setVisible('visible') : setVisible('hide')
+        inView1 ? setVisible1('visible') : setVisible1('hide')
+        inView2 ? setVisible2('visible') : setVisible2('hide')
+        inView3 ? setVisible3('visible') : setVisible3('hide')
+
+    }, [inView, inView1, inView2, inView3])
 
 
     return (
-        <>
-            <Container className="title">
-                <h1>PROJECTS</h1>
+        <section className={`project ${colorScheme}`}>
+            <Container className={`title`}>
+                {lang === 'eng' ? <h1>Projets</h1> : <h1>Proyectos</h1> }
             </Container>
 
             {text &&
@@ -38,11 +56,12 @@ const Projects = () => {
                             const position = idx % 2 == 0 ? 'first' : 'last'
 
                             return (
-                                <Container className='article' key={idx}>
-
-                                    <Row className='p-10'>
-                                        <Col md={{ size: 6, order: position }} xs={{ order: 'last' }}>
+                                <Container className={`article ${visibleArray[idx]}`} key={idx} ref={refArray[idx]} >
+                                  
+                                    <Row className='descrption p-10'>
+                                        <Col md={{ size: 6, order: position }} xs={{ order: 'last' }} >
                                             <h4>{item.title}</h4>
+                                            <hr />
                                             <p>{item.article}</p>
                                         </Col>
 
@@ -73,45 +92,9 @@ const Projects = () => {
                     }
                 </Row>}
 
-            {/* <Carousel variant={variant} >
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={alienhackers}
-                        alt="alien hackers"
-                    />
-                    <Carousel.Caption>
-                        <div className='description'>
-                            <h3>Alien Hackers</h3>
-                            <p>Destroy all enemies on this OOP JS game</p>
-                        </div>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="https://dummyimage.com/800x600/c932c9/ffe"
-                        alt="Second slide"
-                    />
-                    <Carousel.Caption>
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="https://dummyimage.com/800x600/c932c9/ffg"
-                        alt="Third slide"
-                    />
-                    <Carousel.Caption>
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel> */}
+           
 
-        </>
+        </section >
     )
 }
 

@@ -1,10 +1,12 @@
-.projets {
-    height: 600px;
-}
+.project {
 
-.description {
-    background-color: rgba(184, 182, 183, 0.80);
-    border-radius: 15px;
+    &.light{
+        background-color:rgb(248, 249, 250);
+    }
+
+    &.dark{
+        background-color: rgb(33 37 41);
+    }
 }
 
 img {
@@ -17,4 +19,16 @@ img {
 
 p {
     white-space: pre-line
+}
+
+.article {
+
+    &.hide{
+        opacity: 2%;
+    }
+
+    &.visible{
+        opacity: 100%;
+        transition: 3s;
+    }
 }

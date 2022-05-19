@@ -26,8 +26,7 @@ function App() {
       <main className={`App-main ${colorScheme}`}>
         <Hero></Hero>
         <About></About>
-        <Projects></Projects>
-        
+        <Projects></Projects>  
       </main>
     </div>
   );

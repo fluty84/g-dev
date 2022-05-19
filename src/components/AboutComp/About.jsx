@@ -33,7 +33,7 @@ const About = () => {
 
 
     return (
-        <Row>
+        <Row className='about'>
             <Col md={4} ref={ref} onClick={() => setVisible(visible === 'visible' ? 'hide' : 'visible')}>
                 <Image className={`vector ${visible} back`} fluid={true} src={colorScheme === 'dark' ? siluetW : siluet} alt="eduImg" />
                 <Image className={`vector ${visible} middle`} fluid={true} src={colorScheme === 'dark' ? vectorW : vector} alt="eduImg" />
