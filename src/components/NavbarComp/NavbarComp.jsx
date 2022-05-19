@@ -46,13 +46,13 @@ const NavbarComp = () => {
         <>
 
             <Navbar className="navbar" collapseOnSelect fixed="top" expand="lg" bg={colorScheme} variant={colorScheme}>
-                <Container className="navigation">
+                <Container id="navigation">
                     <Navbar.Brand href="#home"><h3>G-DEV</h3></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto" bg={colorScheme} variant={colorScheme}>
+                    <Navbar.Collapse id="responsive-navbar-nav" className="collapse navbar-collapse">
+                        <Nav className={`me-auto bg-${colorScheme}`} bg={colorScheme} variant={colorScheme}>
                             <Nav.Link href="#projets"><h5>{langT.projects}</h5></Nav.Link>
-                            <Nav.Link href="#resume"><h5>{langT.resume}</h5></Nav.Link>
+                            <Nav.Link href={require("../../assets/cvEduardo5.pdf")} target='_blank'><h5>{langT.resume}</h5></Nav.Link>
                         </Nav>
                         <Nav>
                             <NavDropdown title={langT.contact} id="collasible-nav-dropdown">

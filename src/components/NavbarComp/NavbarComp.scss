@@ -13,22 +13,24 @@ $medDisp: 991px;
 
 .navbar {
     padding-bottom: 0.8rem !important;
-  
+    
+    @media (max-width: $medDisp) {
+        padding-bottom: 1.2rem !important;
+    }
+
 }
 
 @media (max-width: $medDisp) {
 
     .navbar-collapse {
-        background-color: #f8f9fa63;
+        background-color:rgb(33 37 41);
         border-radius: 10px;
     }
 }
 
 
-.navigation {
-    height: 30px;
-
-
+#navigation {
+    height: 25px;
 
     img:hover {
         cursor: pointer;

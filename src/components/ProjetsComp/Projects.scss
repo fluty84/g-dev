@@ -1,11 +1,15 @@
 .project {
 
-    &.light{
-        background-color:rgb(248, 249, 250);
+    &.light {
+        background-color: rgb(248, 249, 250);
     }
 
-    &.dark{
+    &.dark {
         background-color: rgb(33 37 41);
+    }
+
+    h1 {
+        padding-top: 8px;
     }
 }
 
@@ -23,12 +27,44 @@ p {
 
 .article {
 
-    &.hide{
+    .button {
+        color: darkorange;
+        border: 3px solid darkorange;
+        width: 100px;
+        border-radius: 10px;
+        &:visited{
+            color: darkorange;
+        }
+    }
+
+    .githubImg {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    &.hide {
         opacity: 2%;
     }
 
-    &.visible{
+    &.visible {
         opacity: 100%;
         transition: 3s;
+
+        .button,
+        .githubImg {
+            transition: box-shadow 3s 1s;
+            box-shadow: 3px 10px 19px 0px rgba(0, 0, 0, 0.75)
+        }
+
+        .button:hover,
+        .githubImg:hover {
+            transition: box-shadow 1s;
+            box-shadow: none;
+            color: darkorange;
+        }
     }
+
+
+
+
 }

@@ -1,15 +1,13 @@
 
-import { Container, Carousel, Row, Col, Image } from 'react-bootstrap'
+import { Container, Row, Col, Image, Nav} from 'react-bootstrap'
 import { useContext, useEffect, useState } from 'react'
-
-import { motion, useAnimation } from "framer-motion";
-
 import { useInView } from "react-intersection-observer";
 
 import { myContext } from "../../context"
 
 import text from './text.json'
 
+import githublogo from '../../assets/githublogo.png'
 
 import './Projects.scss'
 
@@ -58,11 +56,19 @@ const Projects = () => {
                             return (
                                 <Container className={`article ${visibleArray[idx]}`} key={idx} ref={refArray[idx]} >
                                   
-                                    <Row className='descrption p-10'>
+                                    <Row className='description p-10'>
                                         <Col md={{ size: 6, order: position }} xs={{ order: 'last' }} >
                                             <h4>{item.title}</h4>
                                             <hr />
                                             <p>{item.article}</p>
+                                            <Container className="d-flex justify-content-between align-items-center">
+                                               
+                                                <Nav.Link className='button' href={item.link} target="_blank">link</Nav.Link>
+                                               
+                                                <a className='imgLink' href={item.github} target="_blank">
+                                                    <Image className='githubImg' src={githublogo} alt='github logo' href={item.github}></Image>
+                                                </a>
+                                            </Container>
                                         </Col>
 
                                         {
@@ -84,6 +90,7 @@ const Projects = () => {
                                                     <Image src={require(`${item.image}`)} alt={`image ${item.title}`} />
                                                 </Col>
                                         }
+                                       
                                     </Row>
 
                                 </Container>
