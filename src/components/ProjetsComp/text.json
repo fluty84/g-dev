@@ -10,7 +10,7 @@
         },
         {
             "title": "Punto Violeta",
-            "article": "Punto Violeta: A complete website, whose mission is to make gender violence visible. \n It has role management, access to Google Maps and Places APIs, and is rendered from the backend using HBS, programmed with Express, Node and MongoDB.",
+            "article": "Purple Point tranlated, it's complete website, whose mission is to make gender violence visible. \n It has role management, access to Google Maps and Places APIs, and is rendered from the backend using HBS, programmed with Express, Node and MongoDB.",
             "image": "./puntovioleta.png",
             "link":"https://punto-violeta.herokuapp.com/",
             "github":"https://github.com/inesgarper/punto-violeta"
