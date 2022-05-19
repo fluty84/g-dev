@@ -48,7 +48,7 @@ const Projects = () => {
             </Container>
 
             {text &&
-                <Row className='justify-content-evenly'>
+                <Row className='justify-content-evenly p-3'>
                     {
                         text[lang].map((item, idx) => {
 
