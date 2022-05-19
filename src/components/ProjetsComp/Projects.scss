@@ -32,7 +32,8 @@ p {
         border: 3px solid darkorange;
         width: 100px;
         border-radius: 10px;
-        &:visited{
+
+        &:visited {
             color: darkorange;
         }
     }
@@ -64,7 +65,21 @@ p {
         }
     }
 
+    .video {
 
+        @media (max-width: 1000px) {
+                height: 300px;
+            }
+
+        @media (max-width: 767px) {
+            height: 400px;
+        }
+
+        @media (max-width: 540px) {
+            height: 250px;
+
+        }
+    }
 
 
 }

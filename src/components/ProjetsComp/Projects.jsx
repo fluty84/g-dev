@@ -76,6 +76,7 @@ const Projects = () => {
                                             item.video ?
                                                 <Col md={6} xl={6} >
                                                     <iframe
+                                                        className='video'
                                                         width="90%"
                                                         height="350px"
                                                         object-fit="cover"
