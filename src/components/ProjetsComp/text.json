@@ -10,7 +10,7 @@
         },
         {
             "title": "Punto Violeta",
-            "article": "Purple Point tranlated, it's complete website, whose mission is to make gender violence visible. \n It has role management, access to Google Maps and Places APIs, and is rendered from the backend using HBS, programmed with Express, Node and MongoDB.",
+            "article": " \"Purple Point tranlated\", it's complete website, whose mission is to make gender violence visible. \n It has role management, access to Google Maps and Places APIs, and is rendered from the backend using HBS, programmed with Express, Node and MongoDB.",
             "image": "./puntovioleta.png",
             "link":"https://punto-violeta.herokuapp.com/",
             "github":"https://github.com/inesgarper/punto-violeta"
@@ -23,21 +23,21 @@
         },
         {
             "title": "Happy Plant App",
-            "article": "My first React-Native + firebase Android APP, maked whith EXPO. \n Create an account, save your plants and make reminders to water it. \n Feel free to download and try on your Android device.  ",
+            "article": "My first React-Native + firebase Android APP, made whith EXPO. \n Create an account, save your plants with his photos, and make reminders to water it. \n Feel free to download and try on your Android device.  ",
             "image": "./happyplant.png"
         }
     ],
     "sp": [
         {
             "title": "Alien Hackers",
-            "article": "Dispara y elimina a los enemigos antes de que acaben contigo! \n Video juego programado usando JavaScript y OOP. \n Incluye cálculo de colisiones y una IA que reacciona en función de los movimientos del jugador. \n Programado en una única semana después de unicamente 2 semanas aprendiendo programación. ",
+            "article": "¡Dispara y elimina a los enemigos antes de que acaben contigo! \n Video-juego programado usando JavaScript y OOP. \n Incluye cálculo de colisiones y una IA que reacciona en función de los movimientos del jugador. \n Programado en una única semana después de únicamente 2 semanas aprendiendo programación. ",
             "image": "./alienhackers.png",
             "link": "https://fluty84.github.io/Alien-Hackers/",
             "github": "https://github.com/fluty84/Alien-Hackers"
         },
         {
             "title": "Punto Violeta",
-            "article": "Web colaborativa cuya misión es reflejar las ubicación donde han ocurrido agresiones de género. Posee administración de roles, usa las API de Google Maps y Places, y está renderizada desde el Backend unsando HBS, programado con Express, Node y con la base de datos en MongoDB.",
+            "article": "Web colaborativa cuya misión es reflejar las ubicaciones donde han ocurrido agresiones de género. Posee administración de roles, usa las API de Google Maps y Places, y está renderizada desde el Backend unsando HBS, programado con Express, Node y con la base de datos en MongoDB.",
             "image": "./puntovioleta.png",
             "link": "https://punto-violeta.herokuapp.com/",
             "github": "https://github.com/inesgarper/punto-violeta"
@@ -52,7 +52,7 @@
         },
         {
             "title": "Happy Plant App",
-            "article": "Mi primera APP para Android hecha en React Native, elaborada con EXPO y usando Firebase para gestionar el loggin y la base de datos. \n Crea una cuenta para guardar cada una de tus plantas con su foto, y  crea recordatorios para saber cuando regar cada una de ellas.\n ¡¡Haz click para descargar la beta gratis!!",
+            "article": "Mi primera APP para Android hecha en React Native, elaborada con EXPO y usando Firebase para gestionar el login y la base de datos. \n Crea una cuenta para guardar cada una de tus plantas con su foto, y  crea recordatorios para saber cuando regar cada una de ellas.\n ¡¡Haz click para descargar la beta gratis!!",
             "image": "./happyplant.png",
             "link":"https://drive.google.com/file/d/1ggYENygXkqq3UjF0vFDGviCCUClzamas/view?usp=sharing",
             "github":"https://github.com/fluty84/PlantApp"
