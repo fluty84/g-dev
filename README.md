@@ -1,3 +1,9 @@
+# G-DEV 
+
+My personal responsive portfolio made with React and Bootstrap-React.
+Uses Context-API hook to change languaje and dark-mode. 
+All animations are made with SASS and JS. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
