@@ -8,7 +8,7 @@ import video from './sourcecode.mp4'
 
 const Hero = () => {
     
-    const SKILLS = ["Adaptable", "Smart", "Social", "Creative", "Curious", "Adaptable | Smart | Social | Creative | Corious"]
+    const SKILLS = ["Adaptable", "Smart", "Social", "Creative", "Curious", "Adaptable | Smart | Social | Creative | Curious"]
 
     const [skills] = useState(SKILLS)
     const [counter, setCounter] = useState(0)
