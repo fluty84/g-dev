@@ -42,6 +42,7 @@ const Projects = () => {
 
     return (
         <section className={`project ${colorScheme}`}>
+            <a id='project'></a>
             <Container className={`title`}>
                 {lang === 'eng' ? <h1>Projets</h1> : <h1>Proyectos</h1> }
             </Container>
