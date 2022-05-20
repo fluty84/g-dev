@@ -1,0 +1,14 @@
+
+.footer {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    img, a {
+        width: 50px;
+        padding: 5px; 
+        
+        @media (max-width:480px) {
+            width: 30px;
+        }
+    }
+
+}   

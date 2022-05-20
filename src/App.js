@@ -4,6 +4,7 @@ import NavbarComp from './components/NavbarComp/NavbarComp';
 import Hero from './components/HeroComp/Hero';
 import About from './components/AboutComp/About';
 import Projects from './components/ProjetsComp/Projects';
+import Footer from './components/FooterComp/Footer';
 
 import { myContext } from "./context"
 
@@ -26,7 +27,8 @@ function App() {
       <main className={`App-main ${colorScheme}`}>
         <Hero></Hero>
         <About></About>
-        <Projects></Projects>  
+        <Projects></Projects>
+        <Footer></Footer>  
       </main>
     </div>
   );

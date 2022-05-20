@@ -67,7 +67,7 @@ const Projects = () => {
                                                 <Nav.Link className='button' href={item.link} target="_blank">link</Nav.Link>
                                                
                                                 <a className='imgLink' href={item.github} target="_blank">
-                                                    <Image className='githubImg' src={githublogo} alt='github logo' href={item.github}></Image>
+                                                    <Image className='githubImg' src={githublogo} alt='github logo'></Image>
                                                 </a>
                                             </Container>
                                         </Col>
