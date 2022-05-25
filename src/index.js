@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ProviderWrapper } from './context';
+import "bootstrap/dist/js/bootstrap.js"
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css';
