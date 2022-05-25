@@ -1,9 +1,11 @@
 import { useEffect, useState, useLayoutEffect } from 'react'
 import { Container } from 'react-bootstrap'
 import './Hero.scss'
+import { Parallax } from 'react-scroll-parallax'
 
 import frame from './freeze.png'
 import video from './sourcecode.mp4'
+
 
 
 const Hero = () => {
@@ -31,10 +33,12 @@ const Hero = () => {
                     <source src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
+                <Parallax speed={-20} translateY={[-80, 100]}>
                 <Container >
                     <h1>G-DEV</h1>
                     <h3>{skills[counter]}</h3>
                 </Container>
+                </Parallax>
             </div>
         </div>
     )

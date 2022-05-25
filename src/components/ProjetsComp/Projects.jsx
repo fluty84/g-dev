@@ -1,13 +1,15 @@
 
-import { Container, Row, Col, Image, Nav} from 'react-bootstrap'
+import { Container, Row, Col, Image, Nav } from 'react-bootstrap'
 import { useContext, useEffect, useState } from 'react'
 import { useInView } from "react-intersection-observer";
+import { Parallax } from 'react-scroll-parallax';
 
 import { myContext } from "../../context"
 
 import text from './text.json'
 
 import githublogo from '../../assets/githublogo.png'
+
 
 import './Projects.scss'
 
@@ -20,7 +22,7 @@ const Projects = () => {
     const [visible2, setVisible2] = useState('hide')
     const [visible3, setVisible3] = useState('hide')
 
-    
+
     const [ref, inView] = useInView()
     const [ref1, inView1] = useInView()
     const [ref2, inView2] = useInView()
@@ -31,7 +33,7 @@ const Projects = () => {
     const visibleArray = [visible, visible1, visible2, visible3]
 
     useEffect(() => {
-       
+
         inView ? setVisible('visible') : setVisible('hide')
         inView1 ? setVisible1('visible') : setVisible1('hide')
         inView2 ? setVisible2('visible') : setVisible2('hide')
@@ -43,10 +45,11 @@ const Projects = () => {
     return (
         <section className={`project ${colorScheme}`}>
             <a id='project'></a>
-            <Container className={`title`}>
-                {lang === 'eng' ? <h1>Projects</h1> : <h1>Proyectos</h1> }
-            </Container>
-
+            <Parallax speed={-20} translateY={[-30, 80]}>
+                <Container className={`title`}>
+                    {lang === 'eng' ? <h1>Projects</h1> : <h1>Proyectos</h1>}
+                </Container>
+            </Parallax>
             {text &&
                 <Row className='justify-content-evenly p-3'>
                     {
@@ -56,16 +59,19 @@ const Projects = () => {
 
                             return (
                                 <Container className={`article ${visibleArray[idx]}`} key={idx} ref={refArray[idx]} >
-                                  
+
                                     <Row className='description p-10'>
+
                                         <Col md={{ size: 6, order: position }} xs={{ order: 'last' }} >
-                                            <h4>{item.title}</h4>
+                                            <Parallax speed={-20} translateY={[-30, 80]}>
+                                                <h4>{item.title}</h4>
+                                            </Parallax>
                                             <hr />
                                             <p>{item.article}</p>
                                             <Container className="d-flex justify-content-between align-items-center">
-                                               
+
                                                 <Nav.Link className='button' href={item.link} target="_blank">link</Nav.Link>
-                                               
+
                                                 <a className='imgLink' href={item.github} target="_blank">
                                                     <Image className='githubImg' src={githublogo} alt='github logo'></Image>
                                                 </a>
@@ -92,7 +98,7 @@ const Projects = () => {
                                                     <Image src={require(`${item.image}`)} alt={`image ${item.title}`} />
                                                 </Col>
                                         }
-                                       
+
                                     </Row>
 
                                 </Container>
@@ -101,7 +107,6 @@ const Projects = () => {
                     }
                 </Row>}
 
-           
 
         </section >
     )

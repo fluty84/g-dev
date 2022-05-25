@@ -6,18 +6,17 @@
             "image": "./alienhackers.png",
             "link": "https://fluty84.github.io/Alien-Hackers/",
             "github": "https://github.com/fluty84/Alien-Hackers"
-
         },
         {
             "title": "Punto Violeta",
             "article": " \"Purple Point tranlated\", it's complete website, whose mission is to make gender violence visible. \n It has role management, access to Google Maps and Places APIs, and is rendered from the backend using HBS, programmed with Express, Node and MongoDB.",
             "image": "./puntovioleta.png",
-            "link":"https://punto-violeta.herokuapp.com/",
-            "github":"https://github.com/inesgarper/punto-violeta"
+            "link": "https://punto-violeta.herokuapp.com/",
+            "github": "https://github.com/inesgarper/punto-violeta"
         },
         {
             "title": "Waiter-Hack",
-            "article": "Restaurant Web app that allows the bar customer to view the menu and place orders in real time, being these reflected instantly in the restaurant view, from where you can accept them & calculate the bill. \n It’s the latest and most complete app, taking advantage of all the potential of the MERN’s stack, socket, NPM libraries",
+            "article": "Restaurant Web app that allows the bar customer to view the menu and place orders in real time, being these reflected instantly in the restaurant view, from where you can accept them & calculate the bill. \n It’s my Ironhack's Bootcamp final app, taking advantage of all the potential of the MERN’s stack, socket, NPM libraries",
             "image": "./waiterhack.png",
             "video": "https://www.youtube.com/watch?v=OOtCATlunhU"
         },
@@ -47,15 +46,15 @@
             "article": "App para restaurantes que permite al cliente ver el menú disponible y hacer pedidos en tiempo real, los cuales serán reflejados al instante en la vista del restaurante, donde deberán aceptarse y podrá calcularse la cuenta. \n Es el MVP final de mi Bootcamp en Irohack, en el que empleo todo lo aprendido sobre el stack MERN",
             "image": "./waiterhack.png",
             "video": "https://www.youtube.com/watch?v=OOtCATlunhU",
-            "link":"https://waiterhack.netlify.app/",
-            "github":"https://github.com/fluty84/waiterhack"
+            "link": "https://waiterhack.netlify.app/",
+            "github": "https://github.com/fluty84/waiterhack"
         },
         {
             "title": "Happy Plant App",
             "article": "Mi primera APP para Android hecha en React Native, elaborada con EXPO y usando Firebase para gestionar el login y la base de datos. \n Crea una cuenta para guardar cada una de tus plantas con su foto, y  crea recordatorios para saber cuando regar cada una de ellas.\n ¡¡Haz click para descargar la beta gratis!!",
             "image": "./happyplant.png",
-            "link":"https://drive.google.com/file/d/1ggYENygXkqq3UjF0vFDGviCCUClzamas/view?usp=sharing",
-            "github":"https://github.com/fluty84/PlantApp"
+            "link": "https://drive.google.com/file/d/1ggYENygXkqq3UjF0vFDGviCCUClzamas/view?usp=sharing",
+            "github": "https://github.com/fluty84/PlantApp"
         }
     ]
 }

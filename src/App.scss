@@ -3,6 +3,7 @@
 
 $primary-background-light: rgb(220, 220, 229);
 
+
 .App {
   text-align: center;
 
@@ -13,7 +14,7 @@ $primary-background-light: rgb(220, 220, 229);
   font-size: calc(10px + 2vmin);
   color: rgb(47, 45, 45);
   transition: background .4s ease-in,
-  color ease .4s;
+    color ease .4s;
 
 }
 
@@ -23,7 +24,11 @@ $primary-background-light: rgb(220, 220, 229);
   transition: background .4s ease-in, color ease .4s;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Rajdhani';
   font-weight: bold;
   margin-bottom: 0 !important;
@@ -33,10 +38,6 @@ p {
   font-size: 0.8em;
 }
 
-.article{
+.article {
   padding: 50px;
 }
-
-
-
-

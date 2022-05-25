@@ -1,0 +1,30 @@
+{
+    "eng": [
+        {
+            "title": "What I do",
+            "article": "To provide web development with a creative and customer oriented approach, thanks to my experience in sales and my effort to be a better developer every day"
+        },
+        {
+            "title": "How I do",
+            "article": " \"Purple Point tranlated\", it's complete website, whose mission is to make gender violence visible. \n It has role management, access to Google Maps and Places APIs, and is rendered from the backend using HBS, programmed with Express, Node and MongoDB."
+        },
+        {
+            "title": "What do I use?",
+            "article": "With latest hooks available for REACT, adapted to all types of screens thanks to Bootstrap and MUI, the strength and flexibility of conforming a Backend with NODE JS and the scalability and high performance with low costs, of NoSQL databases such as MongoDB."
+        }
+    ],
+    "sp": [
+        {
+            "title": "¿Qué hago?",
+            "article": "Dotar al desarrollo web de un enfoque creativo y orientado al cliente final, gracias a mi experiencia en ventas y mi esfuerzo por ser cada dia un desarrollador mejor "
+        },
+        {
+            "title": "¿Cómo lo hago?",
+            "article": " \"Purple Point tranlated\", it's complete website, whose mission is to make gender violence visible. \n It has role management, access to Google Maps and Places APIs, and is rendered from the backend using HBS, programmed with Express, Node and MongoDB."
+        },
+        {
+            "title": "¿Con qué lo hago",
+            "article": "Uso las últimas tecnologías disponibles para REACT, adaptado a todo tipo de pantallas gracias a Bootstrap y MUI, la robustez y flexibilidad de conformar un Backend con NODE JS y la escalabilidad y alto rendimiento con bajos costes, de las bases de datos NoSQL como MongoDB"
+        }
+    ]
+}
