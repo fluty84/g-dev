@@ -6,7 +6,7 @@
         },
         {
             "title": "How I do",
-            "article": " \"Purple Point tranlated\", it's complete website, whose mission is to make gender violence visible. \n It has role management, access to Google Maps and Places APIs, and is rendered from the backend using HBS, programmed with Express, Node and MongoDB."
+            "article": "Recipe for a perfect development: \n1º Communication => 2º Planning => 3º Preliminary execution => 4º Test in real environment => 5º Final adjustment and delivery.\n And the secret ingredient: \n Keep in touch so you can tell me that everything is working perfectly!"
         },
         {
             "title": "What do I use?",
@@ -16,11 +16,11 @@
     "sp": [
         {
             "title": "¿Qué hago?",
-            "article": "Dotar al desarrollo web de un enfoque creativo y orientado al cliente final, gracias a mi experiencia en ventas y mi esfuerzo por ser cada dia un desarrollador mejor "
+            "article": "Dotar al desarrollo web de un enfoque creativo y orientado al cliente final, gracias a mi experiencia en ventas y mi esfuerzo por ser cada día un desarrollador mejor "
         },
         {
             "title": "¿Cómo lo hago?",
-            "article": " \"Purple Point tranlated\", it's complete website, whose mission is to make gender violence visible. \n It has role management, access to Google Maps and Places APIs, and is rendered from the backend using HBS, programmed with Express, Node and MongoDB."
+            "article": "Receta para un desarrollo perfecto:\n 1º Comunicación  => 2º Planificación  => 3º Ejecución preliminar  => 4º Test en entorno real  => 5º Ajuste final y entrega.  \n Y el ingrediente secreto: \n ¡Seguir en contacto para que me cuentes que todo funciona perfecto!"
         },
         {
             "title": "¿Con qué lo hago",

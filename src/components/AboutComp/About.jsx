@@ -31,7 +31,7 @@ const About = () => {
 
 
     return (
-        <Row className='about'>
+        <Row className='about align-items-center'>
            
                 <Col md={4} ref={ref} onClick={() => setVisible(visible === 'visible' ? 'hide' : 'visible')}>
                     <Image className={`vector ${visible} back`} fluid={true} src={colorScheme === 'dark' ? siluetW : siluet} alt="eduImg" />
@@ -39,7 +39,7 @@ const About = () => {
                     <Image className={`vector ${visible} front`} fluid={true} src={edu} alt="eduImg" />
                 </Col>
         
-            <Col md={6} className='article'>
+            <Col md={6} className='slider'>
 
                 <Carousel >
                     {
