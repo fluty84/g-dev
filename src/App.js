@@ -9,6 +9,7 @@ import Footer from './components/FooterComp/Footer';
 
 import { myContext } from "./context"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 
 
