@@ -6,10 +6,9 @@ import { Parallax } from 'react-scroll-parallax'
 import frame from './freeze.png'
 import video from './sourcecode.mp4'
 
-
-
 const Hero = () => {
     
+    const mobileViewer = window.innerWidth < 500
     const SKILLS = ["Adaptable", "Smart", "Social", "Creative", "Curious", "Adaptable | Smart | Social | Creative | Curious"]
 
     const [skills] = useState(SKILLS)
@@ -33,7 +32,8 @@ const Hero = () => {
                     <source src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <Parallax speed={-20} translateY={[-80, 100]}>
+                <Parallax  speed={-20} translateY={ 
+                    mobileViewer ? [-20, 50] : [-80, 100] }>
                 <Container >
                     <h1>G-DEV</h1>
                     <h3>{skills[counter]}</h3>

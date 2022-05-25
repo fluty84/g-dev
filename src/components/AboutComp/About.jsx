@@ -43,9 +43,9 @@ const About = () => {
 
                 <Carousel >
                     {
-                        slides[lang]?.map((item) => {
+                        slides[lang]?.map((item, idx) => {
                             return (
-                                <Carousel.Item >
+                                <Carousel.Item key={idx} >
                                     <div className="slide">
                                         <h2>{item.title}</h2>
                                         <p>{item.article}</p>
